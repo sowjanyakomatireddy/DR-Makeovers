@@ -100,21 +100,34 @@ const Contact: React.FC = () => {
           <h3 className="text-2xl font-serif text-white mb-6 text-center">Request an Appointment</h3>
           <form className="space-y-4" onSubmit={handleSubmit} noValidate>
             <div className="grid grid-cols-2 gap-4">
-              <input
-                type="date"
-                placeholder="Select Date"
-                className="w-full bg-dark-900 border border-gray-600 p-3 text-white focus:border-gold-500 focus:outline-none"
-                value={date}
-                onChange={(e) => setDate(e.target.value)}
-                aria-invalid={!!errors.date}
-              />
-              <input
-                type="time"
-                placeholder="Select Time"
-                className="w-full bg-dark-900 border border-gray-600 p-3 text-white focus:border-gold-500 focus:outline-none"
-                value={time}
-                onChange={(e) => setTime(e.target.value)}
-              />
+              <div className="relative">
+                <input
+                  type="date"
+                  className="w-full bg-dark-900 border border-gray-600 p-3 text-white focus:border-gold-500 focus:outline-none"
+                  value={date}
+                  onChange={(e) => setDate(e.target.value)}
+                  aria-invalid={!!errors.date}
+                />
+                {!date && (
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none select-none">
+                    Enter date
+                  </span>
+                )}
+              </div>
+
+              <div className="relative">
+                <input
+                  type="time"
+                  className="w-full bg-dark-900 border border-gray-600 p-3 text-white focus:border-gold-500 focus:outline-none"
+                  value={time}
+                  onChange={(e) => setTime(e.target.value)}
+                />
+                {!time && (
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none select-none">
+                    Enter time
+                  </span>
+                )}
+              </div>
             </div>
 
             <div>
