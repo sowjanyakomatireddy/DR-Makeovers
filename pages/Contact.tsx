@@ -102,6 +102,7 @@ const Contact: React.FC = () => {
             <div className="grid grid-cols-2 gap-4">
               <input
                 type="date"
+                placeholder="Select Date"
                 className="w-full bg-dark-900 border border-gray-600 p-3 text-white focus:border-gold-500 focus:outline-none"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
@@ -109,6 +110,7 @@ const Contact: React.FC = () => {
               />
               <input
                 type="time"
+                placeholder="Select Time"
                 className="w-full bg-dark-900 border border-gray-600 p-3 text-white focus:border-gold-500 focus:outline-none"
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
