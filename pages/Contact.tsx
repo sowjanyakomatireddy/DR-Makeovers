@@ -81,17 +81,14 @@ const Contact: React.FC = () => {
             <div>
                 <h3 className="text-2xl font-serif text-white mb-6">Visit Us</h3>
                 <p className="text-gray-400 leading-relaxed mb-4">
-                    1st Floor, Stone Ridge Center,<br/>
-                    Bikanervala opp street, above ICICI Bank,<br/>
-                    Kondapur, Whitefields,<br/>
-                    Hyderabad, Telangana 500084
+                    near Lb ngr Chintalkunta check post
                 </p>
             </div>
 
             <div>
                 <h3 className="text-2xl font-serif text-white mb-4">Direct Contact</h3>
                 <p className="text-gold-500 text-xl mb-2">+91 95536 73711</p>
-                <p className="text-gray-400">contact@drmakeovers.com</p>
+                <p className="text-gray-400">Divyareddy.bodanapu@ gmail.com</p>
             </div>
         </div>
 
